@@ -1,9 +1,12 @@
+/* 기본 CSS 리셋 파일 import */
 @import 'reset.css';
 
+/* 전체 페이지 기본 스타일 */
 body {
     background-color: #fff;
 }
 
+/* 루트 컨테이너 스타일 */
 .root-wrap {
     position: absolute;
     top: 0;
@@ -11,7 +14,7 @@ body {
     width: 100%;
 }
 
-/* header 시작 */
+/* 헤더 스타일 시작 */
 .header-container {
     background-color: rgba(3,37,65,1);
 }
@@ -43,21 +46,23 @@ body {
     color: white;
     font-weight: 600;
 }
-/* header 끝 */
+/* 헤더 스타일 끝 */
 
+/* 페이지 컨테이너 스타일 */
 .page-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 32px 0;
 }
 
-
+/* 영화 목록 컨테이너 스타일 */
 .movies-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* 개별 영화 카드 스타일 */
 .movie-container {
     width: 250px;
     margin: 16px;
@@ -79,7 +84,6 @@ body {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .movie-info h4 {
@@ -90,26 +94,22 @@ body {
     margin-left: 3px;
 }
 
-/*상세페이지*/
+/* 영화 상세 페이지 스타일 */
+.detail-page-container {
+    display: flex;
+}
 
-.detail-page-container{
-    display:flex;
-  
-  }
-  
-  .detail-page-container img{
+.detail-page-container img {
     background-color: aliceblue;
-    margin:30px;
+    margin: 30px;
     border-radius: 3px;
-  
-  }
-  
-  .detail-page-container h1{
+}
+
+.detail-page-container h1 {
     font-size: 30px;
-    margin: 50px 0 ;
-    
-  }
-  .detail-page-container p{
+    margin: 50px 0;
+}
+
+.detail-page-container p {
     margin: 0 50px 0 0;
-  
-  }
+}

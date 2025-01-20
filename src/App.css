@@ -1,38 +1,44 @@
+/* 앱 전체 컨테이너 스타일 */
 .App {
-  text-align: center;
+  text-align: center; /* 내용을 중앙 정렬 */
 }
 
+/* 앱 로고 스타일 */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* 로고 높이를 뷰포트 높이의 40%로 설정 */
+  pointer-events: none; /* 로고에 대한 마우스 이벤트 비활성화 */
 }
 
+/* 사용자가 감소된 모션을 선호하지 않을 경우에만 애니메이션 적용 */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* 로고에 20초 주기의 무한 회전 애니메이션 적용 */
   }
 }
 
+/* 앱 헤더 스타일 */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* 배경색 설정 */
+  min-height: 100vh; /* 최소 높이를 뷰포트 높이의 100%로 설정 */
+  display: flex; /* flexbox 레이아웃 사용 */
+  flex-direction: column; /* 세로 방향으로 요소 배치 */
+  align-items: center; /* 가로축 중앙 정렬 */
+  justify-content: center; /* 세로축 중앙 정렬 */
+  font-size: calc(10px + 2vmin); /* 폰트 크기를 뷰포트 크기에 따라 동적으로 설정 */
+  color: white; /* 텍스트 색상을 흰색으로 설정 */
 }
 
+/* 앱 링크 스타일 */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* 링크 색상 설정 */
 }
 
+/* 로고 회전 애니메이션 정의 */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* 시작 시 0도 회전 */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* 종료 시 360도 회전 */
   }
 }

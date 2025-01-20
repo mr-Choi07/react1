@@ -5,7 +5,9 @@ export default function Header() {
   return (
     <div className='header-container'>
       <div className="header-wrap">
+        {/* 헤더의 왼쪽 부분 */}
         <div className="header-left-wrap">
+          {/* 홈페이지로 이동하는 로고 링크 */}
           <Link style={{ display: 'flex', alignItems: 'center' }} to="/">
             <img
               style={{ width: "154px", height: "20px" }}
@@ -13,22 +15,27 @@ export default function Header() {
               alt="로고"
             />
           </Link>
+          {/* 네비게이션 메뉴 */}
           <ul>
+            {/* 영화 페이지로 이동하는 링크 */}
             <li>
               <Link className="header-nav-item" to="/movie">
                 영화
               </Link>
             </li>
+            {/* TV 프로그램 페이지로 이동하는 링크 */}
             <li>
               <Link className="header-nav-item" to="/tv">
                 TV 프로그램
               </Link>
             </li>
+            {/* 인물 페이지로 이동하는 링크 */}
             <li>
               <Link className="header-nav-item" to="/person">
                 인물
               </Link>
             </li>
+            {/* 추가 메뉴 항목 (현재는 홈페이지로 연결됨) */}
             <li>
               <Link className="header-nav-item" to="/">
                 More
@@ -36,6 +43,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
+        {/* 헤더의 오른쪽 부분 (현재 비어있음) */}
         <div></div>
       </div>
     </div>
